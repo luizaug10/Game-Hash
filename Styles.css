@@ -32,3 +32,26 @@ body {
 .board.x .cell:not(.x):not(.circle):hover::before {
   background: rgba(255, 255, 255, 0.3) !important;
 }
+
+/* Célula */
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cell.x,
+cell.circle {
+  cursor: not-allowed;
+}
+
+.cell:nh-child(1),
+.cell:nh-child(2),
+.cell:nh-child(3) {
+  border-top: none;
+}
