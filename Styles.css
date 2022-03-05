@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(45deg, black, #0a045a);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 4, 90) 100%);
 }
 
 .board {
@@ -24,7 +24,7 @@ body {
 
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.x .cell:not(.x):not(.circle):hover::before,
-.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after,
 .board.x .cell:not(.x):not(.circle):hover::before {
   background: rgba(255, 255, 255, 0.3) !important;
 }
@@ -33,7 +33,7 @@ body {
 .cell {
   width: 100px;
   height: 100px;
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,34 +72,34 @@ body {
 /* X */
 .cell.x::before,
 .cell.x::after,
-.board.cell:not(.x):not(.circle):hover::after,
-.board.cell:not(.x):not(.circle):hover::before {
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before {
   content: "";
   height: calc(100px * 0.15);
   width: calc(100px * 0.9);
-  background: white;
+  background: rgb(255, 255, 255);
   position: absolute;
 }
 
 .cell.x::before,
-.board.cell:not(.x):not(.circle):hover::before {
+.board.x .cell:not(.x):not(.circle):hover::before {
   transform: rotate(45deg);
 }
 
 .cell.x::after,
-.board.cell:not(.x):not(.circle):hover::after {
+.board.x .cell:not(.x):not(.circle):hover::after {
   transform: rotate(-45deg);
 }
 
 /* CIRCLE */
 .cell.circle::before,
 .cell.circle::after,
-.board.circle:not(.x):not(.circle):hover::after,
-.board.circle:not(.x):not(.circle):hover::after {
+.board.circle .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::after {
   content: "";
   height: calc(100px * 0.9);
   width: calc(100px * 0.9);
-  background: white;
+  background: rgb(255, 255, 255);
   position: absolute;
   border-radius: 50%;
 }
@@ -114,28 +114,28 @@ body {
   bottom: 0;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   flex-direction: column;
 }
 
 .winning-message-button {
   font-size: 2.5rem;
-  background-color: #0a045a;
+  background-color: rgb(10, 4, 90);
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
   border: none;
   margin-top: 16px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .winning-message-button:hover {
-  color: #0a045a;
-  background-color: white;
+  color: rgb(10, 4, 90);
+  background-color: rgb(255, 255, 255);
 }
 
 .winning-message-text {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 5rem;
 }
 
@@ -144,14 +144,13 @@ body {
 }
 
 /* RODAPÉ */
-
 footer {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: -22px;
+  margin-top: -25px;
 }
 
 .copyright {
-  color: white;
+  color: rgb(255, 255, 255);
 }
