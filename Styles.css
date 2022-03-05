@@ -26,7 +26,7 @@ body {
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.circle .cell:not(.x):not(.circle):hover::after,
 .board.x .cell:not(.x):not(.circle):hover::before {
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
 }
 
 /* CÉLULA */
