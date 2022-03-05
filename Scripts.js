@@ -38,11 +38,11 @@ const endGame = (isDraw) => {
     winningMessageTextElement.innerText = "EMPATE!";
   } else {
     winningMessageTextElement.innerText = isCircleTurn
-      ? "O VENCEU!"
-      : "X VENCEU!";
+      ? "'O' VENCEU!"
+      : "'X' VENCEU!";
   }
 
-  winningMessage.classList.add("show-winnig-message");
+  winningMessage.classList.add("show-winning-message");
 };
 
 const checkForWin = (currentPlayer) => {
