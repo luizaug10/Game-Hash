@@ -139,6 +139,7 @@ body {
 .winning-message-text {
   color: white;
   font-size: 5rem;
+  text-align: center;
 }
 
 .show-winning-message {
