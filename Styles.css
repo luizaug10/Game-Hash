@@ -21,6 +21,7 @@ body {
   align-content: center;
   justify-items: center;
   align-items: center;
+  text-align: center;
   grid-template-columns: repeat(3, auto);
 }
 
@@ -116,6 +117,7 @@ body {
   bottom: 0;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: black;
   flex-direction: column;
 }
@@ -129,11 +131,13 @@ body {
   border: none;
   margin-top: 16px;
   color: white;
+  text-align: center;
 }
 
 .winning-message-button:hover {
   color: #23a0f5;
   background-color: white;
+  text-align: center;
 }
 
 .winning-message-text {
